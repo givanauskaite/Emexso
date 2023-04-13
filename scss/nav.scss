@@ -1,0 +1,30 @@
+nav {
+    @include flex-between;
+  
+    .logo img {
+      width: 150px;
+    }
+  
+    .links {
+      display: flex;
+      gap: 10px;
+    a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+  }
+
+
+  @media (max-width: 768px){
+    // iki 320px kad graziai atrodytu
+    nav {
+      justify-content: center;
+      gap: 20px;
+    
+      .links {
+        display: none;
+      }
+    }
+  }
